@@ -1,0 +1,7 @@
+BEGIN oiu
+
+REQUEST oiuc_gb 201 {
+    PARAM id char [50]
+    PARAM is_alive int
+}
+END
