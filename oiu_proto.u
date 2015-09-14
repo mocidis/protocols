@@ -1,7 +1,9 @@
 BEGIN oiu
 
 REQUEST oiuc_gb 201 {
+    PARAM type char [5]
     PARAM id char [50]
-    PARAM is_alive int
+    PARAM is_online int
+    PARAM timestamp char [20]
 }
 END
