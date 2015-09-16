@@ -1,8 +1,12 @@
 BEGIN arbiter
 
 REQUEST abt_up 101 {
-    PARAM code int
+    PARAM is_online int
 	PARAM username char [10]
     PARAM type char [5]
+    PARAM n_ports int
+    PARAM ip char [50]
+    PARAM frequence double
+    PARAM location char [50]
 }
 END

@@ -1,6 +1,6 @@
 BEGIN riu
 
-REQUEST reg_state_resp {
+REQUEST riuc_ptt 301 {
     PARAM code int
     PARAM msg char [50]
 }
