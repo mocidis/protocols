@@ -5,10 +5,10 @@ REQUEST oiuc_gb 201 {
     PARAM id char [50]
     PARAM is_online int
     PARAM timestamp char [20]
-    PARAM n_ports int
     PARAM ip char [50]
     PARAM frequence double
     PARAM location char [50]
+    PARAM ports_status char [50]
 }
 
 REQUEST oiuc_sq 202 {
