@@ -1,7 +1,6 @@
 BEGIN riu
 
 REQUEST riuc_ptt 301 {
-    PARAM msg char [50]
-    PARAM code int
+    PARAM cmd char [50]
 }
 END

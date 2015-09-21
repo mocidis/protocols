@@ -9,4 +9,9 @@ REQUEST abt_up 101 {
     PARAM location char [50]
     PARAM ports_status char [50]
 }
+
+REQUEST abt_ptt 102 {
+    PARAM cmd char [10]
+    PARAM list char [150]
+}
 END
