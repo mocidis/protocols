@@ -9,6 +9,7 @@ REQUEST oiuc_gb 201 {
     PARAM frequence double
     PARAM location char [50]
     PARAM ports_status char [50]
+    PARAM des char [30]
 }
 
 REQUEST oiuc_sq 202 {
