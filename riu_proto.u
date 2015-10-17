@@ -2,5 +2,7 @@ BEGIN riu
 
 REQUEST riuc_ptt 301 {
     PARAM cmd char [50]
+    PARAM cmd_ptt char [10]
+    PARAM port_ptt char [5]
 }
 END

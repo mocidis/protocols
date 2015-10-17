@@ -4,15 +4,15 @@ REQUEST abt_up 101 {
     PARAM is_online int
 	PARAM username char [10]
     PARAM type char [5]
-    PARAM ip char [50]
+    PARAM ip_addr char [50]
     PARAM frequence double
     PARAM location char [50]
     PARAM ports_status char [50]
-    PARAM des char [30]
+    PARAM des char [250]
 }
 
 REQUEST abt_ptt 102 {
-    PARAM cmd char [10]
     PARAM list char [150]
+    PARAM cmd_ptt char [150]
 }
 END
