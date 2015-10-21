@@ -4,21 +4,17 @@ REQUEST oiuc_gb 201 {
     # 123 = RIUC, 124 = OIUC
     PARAM type int
 
-    PARAM id char [50]
-    PARAM location char [50]
-    PARAM des char [30]
-    PARAM ip char [50]
+    PARAM id char [10]
+    PARAM location char [30]
+    PARAM desc char [50]
+    PARAM conn_str char [30]
 
     PARAM is_online int
     PARAM is_tx int
     PARAM is_sq int
     PARAM frequence double
-    PARAM port int
+    PARAM radio_port int
     PARAM volume double
-    PARAM multicast_ip char [16]
-    PARAM stream_port int
-
-    PARAM ports_status char [50]
 
     PARAM timestamp char [20]
 }
