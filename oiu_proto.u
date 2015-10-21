@@ -2,19 +2,31 @@ BEGIN oiu
 
 REQUEST oiuc_gb 201 {
     PARAM type char [5]
+
     PARAM id char [50]
-    PARAM is_online int
-    PARAM timestamp char [20]
-    PARAM ip char [50]
-    PARAM frequence double
     PARAM location char [50]
-    PARAM ports_status char [50]
     PARAM des char [30]
+    PARAM ip char [50]
+
+    PARAM is_online int
+    PARAM is_tx int
+    PARAM is_sq int
+    PARAM frequence double
+    PARAM port int
+    PARAM volume double
+    PARAM multicast_ip char [16]
+    PARAM stream_port int
+
+    PARAM ports_status char [50]
+
+    PARAM timestamp char [20]
 }
 
-REQUEST oiuc_sq 202 {
-    PARAM _id char [50]
-    PARAM port int
-    PARAM multicast_addr char [50]
+REQUEST oiuc_ptt 202 {
+    PARAM ptt_on int
+    PARAM ptt_name char [10]
+    PARAM ptt_port int
+    PARAM sdp_ip char [16]
+    PARAM sdp_port int
 }
 END

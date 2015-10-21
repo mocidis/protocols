@@ -1,18 +1,28 @@
 BEGIN arbiter
 
 REQUEST abt_up 101 {
-    PARAM is_online int
-	PARAM username char [10]
     PARAM type char [5]
-    PARAM ip_addr char [50]
-    PARAM frequence double
+
+	PARAM username char [10]
     PARAM location char [50]
-    PARAM ports_status char [50]
-    PARAM des char [250]
+    PARAM desc char [250]
+    PARAM ip_addr char [50]
+
+    PARAM is_online int
+    PARAM is_tx int
+    PARAM is_sq int
+    PARAM frequence double
+    PARAM port int
+    PARAM volume double
+    PARAM multicast_ip char [16]
+    PARAM stream_port int
 }
 
 REQUEST abt_ptt 102 {
-    PARAM list char [150]
-    PARAM cmd_ptt char [150]
+    PARAM ptt_on int
+    PARAM ptt_name char [10]
+    PARAM ptt_port int
+    PARAM sdp_ip char [16]
+    PARAM sdp_port int
 }
 END
