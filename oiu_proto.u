@@ -1,7 +1,8 @@
 BEGIN oiu
 
 REQUEST oiuc_gb 201 {
-    PARAM type char [5]
+    # 123 = RIUC, 124 = OIUC
+    PARAM type int
 
     PARAM id char [50]
     PARAM location char [50]
