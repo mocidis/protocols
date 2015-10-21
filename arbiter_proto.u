@@ -1,7 +1,8 @@
 BEGIN arbiter
 
 REQUEST abt_up 101 {
-    PARAM type char [5]
+    # type of update device: 123=RIUC, 124=OIUC
+    PARAM type int
 
 	PARAM username char [10]
     PARAM location char [50]
